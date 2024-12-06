@@ -4,13 +4,39 @@
 
 Chinese poetry, one of the most treasured elements of China's rich cultural heritage, has been an essential part of the nation's literary and artistic tradition for over two millennia. Renowned for its rhythmic precision, deep philosophical reflections, and artistic elegance, poetry has played a crucial role in education, governance, and personal expression. During the Tang and Song dynasties, poetry flourished as a hallmark of intellectual and artistic achievement, with forms like **五言绝句 (Five-Character Quatrains)** and **七言律诗 (Seven-Character Regulated Verses)** embodying the intricate interplay of form, tone, and meaning. These poetic styles continue to inspire contemporary writers and readers, preserving the timeless beauty of Chinese language and culture.
 
-**PoeticMind** is a project designed to fine-tune a GPT-based language model for generating structured Chinese poems interactively. The primary aim is to explore how large language models can assist in preserving and expanding the creative possibilities of Chinese poetry, blending ancient artistry with modern AI innovation.
+### **A Brief History of Chinese Poetry**
+Chinese poetry dates back to the **Shijing (Book of Songs)**, a collection of over 300 poems compiled around the 6th century BCE. This anthology laid the foundation for the poetic tradition that evolved through the centuries, reflecting themes of nature, morality, and human emotion. During the Han dynasty, **fu poetry** emerged as a blend of prose and verse, emphasizing descriptive and narrative elements.
 
----
+The Tang dynasty (618–907 CE) is often regarded as the **Golden Age of Chinese Poetry**. This era saw the rise of iconic poets like **Li Bai**, **Du Fu**, and **Wang Wei**, whose works captured the intricacies of human experience, the beauty of the natural world, and the political upheavals of their time. The Song dynasty (960–1279 CE) introduced **ci poetry**, a lyrical form set to music, which became a medium for personal expression and emotional depth.
 
-## Problem Statement
+In later centuries, Chinese poetry continued to thrive, adapting to changing cultural and social contexts while maintaining its classical roots. Today, Chinese poetry remains a vibrant art form, celebrated for its ability to bridge tradition and modernity.
 
-Generating Chinese poetry requires capturing the rhythm, structure, and essence of the language while remaining contextually relevant. Traditionally, this process relies on human creativity and linguistic expertise, which can be both time-intensive and resource-heavy. Our project addresses this by leveraging a fine-tuned transformer model that allows for real-time generation of poems based on user input, with customizable structure and creative parameters.
+### **Key Characteristics of Chinese Poetry**
+1. **Structural Precision**: Traditional Chinese poetry follows strict rules of form, including fixed line lengths, tonal patterns, and rhyming schemes.
+2. **Imagery and Symbolism**: Poets often use vivid imagery and metaphors to convey emotions and ideas. Nature is a recurring motif, serving as both a subject and a source of inspiration.
+3. **Philosophical Depth**: Many poems reflect Confucian, Taoist, or Buddhist principles, offering insights into morality, harmony, and the human condition.
+4. **Musicality**: The tonal nature of the Chinese language lends itself to a rhythmic and melodic quality, enhancing the auditory appeal of poetry.
+
+<p align="center">
+  <img src="imgs/wiki-poem.png" alt="Image of classical Chinese poetry">
+</p>
+
+<p align="center">
+  *Image source: [Wikipedia - Chinese Poetry](https://en.wikipedia.org/wiki/Chinese_poetry)*
+</p>
+
+
+### **Forms of Classical Chinese Poetry**
+- **五言绝句 (Five-Character Quatrains)**: A compact form with four lines of five characters each, known for its brevity and vivid imagery.
+- **七言律诗 (Seven-Character Regulated Verses)**: A more elaborate structure with eight lines of seven characters each, emphasizing tonal balance and rhyming precision.
+- **词 (Ci Poetry)**: A lyrical style often set to music, allowing for more flexible line lengths and emotional expression.
+- **赋 (Fu Poetry)**: A descriptive and narrative form combining prose and verse, popular during the Han dynasty.
+
+## PoeticMind project
+
+Chinese poetry is more than an art form—it is a profound window into the heart and soul of Chinese culture. For centuries, it has served as a tool for education, a medium for political commentary, and a means of personal expression. The elegance and depth of classical Chinese poetry continue to inspire poets, scholars, and readers worldwide, bridging the past with the present.
+
+The PoeticMind project seeks to preserve this treasured tradition while making it more accessible and engaging for contemporary audiences. By leveraging a fine-tuned transformer model, the project captures the rhythm, structure, and essence of classical Chinese poetry while allowing for real-time generation based on user input. This innovation reduces the reliance on time-intensive human creativity and linguistic expertise, enabling users to explore and create meaningful poetry interactively. Through customizable structures and creative parameters, PoeticMind ensures the legacy of Chinese poetry is preserved and adapted for future generations, fostering a deeper appreciation of its timeless cultural influence.
 
 ---
 
@@ -42,8 +68,31 @@ An **interactive Gradio demo** is embedded within the provided Google Colab note
    !pip install gradio
     ```
 ## Demo
-Run the cells, and use the Gradio interface directly within the notebook.  
-The demo eliminates the need for external apps, making it easy to explore and interact with the model.
+
+This section demonstrates the PoeticMind model in action, showcasing its ability to generate structured Chinese poetry. The seed text, along with user-defined parameters such as rows and columns, serves as the foundation for creating meaningful and aesthetically pleasing poems.
+
+### **Demo 1: Generating a Poem with Seed Text "秋日"**
+- **Seed Text**: 秋日 (Autumn Day)  
+- **Rows**: 4  
+- **Columns**: 5  
+
+#### **Output Poem**:
+0 [CLS] 秋日中有三，花上枝头月。 此处流光相，犹似天际落。
+
+1 [CLS] 秋日满野寒，高楼垂柳飞。 寒更冷时暖，霜露冷冷日。
+
+2 [CLS] 秋日未复远，山川未止阴。 月如水落花，风露山烟雪。
+
+#### **Explanation**:
+1. **Stanza 1**:
+   - The moonlight shimmers on blossoms, creating a harmonious connection between the earthly and celestial realms. The phrase "犹似天际落" likens the radiance to starlight descending from the sky, evoking a peaceful autumn night.
+
+2. **Stanza 2**:
+   - A chilly autumn breeze sweeps across fields and high towers. The swaying of willows contrasts motion and stillness, while the interplay of frost and sunlight introduces warmth amidst the cold, symbolizing resilience.
+
+3. **Stanza 3**:
+   - As autumn lingers, the natural beauty of mountains and rivers remains undisturbed. The moon resembles water flowing over blossoms, and the wind carries the dewy scent of mountain mist mixed with snow, blending melancholy and awe.
+
 
 ---
 
