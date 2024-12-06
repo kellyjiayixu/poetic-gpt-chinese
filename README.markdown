@@ -48,12 +48,6 @@ The PoeticMind project seeks to preserve this treasured tradition while making i
 
 ---
 
-## Results
-
-The project successfully demonstrates how a transformer model can generate creative and contextually meaningful Chinese poems interactively, with flexible structure and adjustable parameters.
-
----
-
 ## Presentation Materials
 
 An **interactive Gradio demo** is embedded within the provided Google Colab notebook. Users can:
@@ -83,6 +77,8 @@ This section demonstrates the PoeticMind model in action, showcasing its ability
 
 2 [CLS] 秋日未复远，山川未止阴。 月如水落花，风露山烟雪。
 
+![alt text](imgs/autumn-demo.png)
+
 #### **Explanation**:
 1. **Stanza 1**:
    - The moonlight shimmers on blossoms, creating a harmonious connection between the earthly and celestial realms. The phrase "犹似天际落" likens the radiance to starlight descending from the sky, evoking a peaceful autumn night.
@@ -93,8 +89,63 @@ This section demonstrates the PoeticMind model in action, showcasing its ability
 3. **Stanza 3**:
    - As autumn lingers, the natural beauty of mountains and rivers remains undisturbed. The moon resembles water flowing over blossoms, and the wind carries the dewy scent of mountain mist mixed with snow, blending melancholy and awe.
 
+--- 
+
+### **Demo 2: Generating a Poem with Seed Text "春风"**
+- **Seed Text**: 春风 (Spring Breeze)  
+- **Rows**: 4  
+- **Columns**: 5  
+
+#### **Output Poem**:
+
+0 [CLS] 春风十月雨，风吹寒意雨。 新雨一季云，高露已长霜。
+
+1 [CLS] 春风在竹径，月光如海浪。 谁言烟寒月，雨满江头月。
+
+2 [CLS] 春风吹花上，绿花清雨下。 又有三千春，青龙更应长。
+
+
+![Image of Spring Breeze Poem](imgs/spring-breeze.png)
+
+#### **Explanation**:
+1. **Stanza 1**:
+   - The spring breeze mingles with rain, bringing a chilly atmosphere that contrasts with the season’s usual warmth. The imagery of “新雨一季云，高露已长霜” suggests the persistence of winter’s traces, setting the stage for renewal.
+
+2. **Stanza 2**:
+   - Walking along a bamboo path, the moonlight reflects on waves that resemble the vast ocean. The poet ponders the transient beauty of nature, likening the smoky chill to the poetic essence of the moonlit rain.
+
+3. **Stanza 3**:
+   - Spring’s vibrance unfolds as flowers bloom and green hues thrive under gentle rainfall. The mention of "三千春" (three thousand springs) and "青龙" (green dragon) symbolizes longevity and nature’s continuous cycle of growth and renewal.
+
+This demo highlights the model's ability to capture the rejuvenating spirit of spring, blending imagery of nature and the passage of seasons into a harmonious poetic structure.
 
 ---
+
+### **Demo 3: Generating a Poem with Seed Text "雨夜"**
+- **Seed Text**: 雨夜 (Rainy Night)  
+- **Rows**: 4  
+- **Columns**: 7  
+
+#### **Output Poem**:
+
+0 [CLS] 雨夜夜深屋底寒，天黑后半夜来不。一日空云不知天，几度风雨不知南。
+
+1 [CLS] 雨夜临江流水平，明月落日天空阔。山河明月江底沉，城里星星星星月。
+
+2 [CLS] 雨夜里看天涯无，明月明月阴照云。白雪在眼群落黄，雪絮依旧在枝头。
+
+
+![Image of Rainy Night Poem](imgs/rainy-night.png)
+
+#### **Explanation**:
+1. **Stanza 1**:
+   - The first stanza sets a somber and mysterious mood, describing the coldness of the night as rain falls incessantly. The imagery of "一日空云不知天" (empty clouds obscure the sky) and "几度风雨不知南" (wind and rain blur the direction south) evokes disorientation and contemplation.
+
+2. **Stanza 2**:
+   - Transitioning to a riverside scene, the moonlight reflects on the water’s surface. The expansive imagery of “天空阔” (the vast sky) and “山河明月江底沉” (mountains, rivers, and the moon sinking into the riverbed) captures the grandeur of nature and the passage of time.
+
+3. **Stanza 3**:
+   - The final stanza brings a sense of quiet reflection. The moonlight peers through the clouds, and snowflakes gently settle on tree branches. The juxtaposition of “雪絮依旧在枝头” (snow remains on the branches) highlights the continuity of nature even amid change.
 
 ## Model Card / Dataset Card
 
