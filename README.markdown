@@ -259,20 +259,30 @@ The repository includes a **Jupyter Notebook** that demonstrates:
 
 ## Repository Structure
 
-- **`README.md`**: This file, providing an overview and guide for the project.
-- **`learn.ipynb`**: Jupyter notebook containing the code for training and demonstrating the interactive Gradio interface for generating Chinese poems.
-- **`chinese_poems.txt`**: A text file containing a dataset of Chinese poems used for training and fine-tuning the model.
-- **`more_datas/`**: Directory containing additional datasets for experimentation or model training.
-- **`.git/`**: Git configuration and metadata for version control.
-- **`videos/`**: Includes a recorded walkthrough of the project.
+```bash
+project-name/
+│
+├── README.markdown        # Overview and guide for the project
+├── presentation.mp4       # Recorded walkthrough of the project
+│
+├── code/
+│   ├── more_datas/
+│   │   ├── .DS_Store
+│   │   ├── chinese_poems.txt   # Primary dataset of Chinese poems
+│   │   ├── learn.ipynb         # Jupyter notebook for training and demo
+│   │   ├── save.model.zip.001  # Split model file part 1
+│   │   ├── save.model.zip.002  # Split model file part 2
+│   │   ├── save.model.zip.003  # Split model file part 3
+│   │   └── save.model.zip.004  # Split model file part 4
+│
+├── imgs/
+│   ├── .DS_Store
+│   ├── autumn-demo.png    # Example output for "autumn" theme
+│   ├── rainy-night.png    # Example output for "rainy night" theme
+│   ├── spring-breeze.png  # Example output for "spring breeze" theme
+│   └── wiki-poem.png      # "wiki poem"
+│
+├── .DS_Store              # MacOS system file
 
----
-
-## Video Recording
-
-A video recording is available in the `videos/` directory. The recording:
-1. Provides a **two-minute overview** of the project.
-2. Demonstrates the **Gradio interface** embedded in the Colab notebook.
-3. Highlights key results and insights.
-
+```
 ---
