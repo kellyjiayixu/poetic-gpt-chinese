@@ -236,7 +236,7 @@ The project demonstrates the potential of fine-tuned language models to:
 - [`uer/gpt2-chinese-cluecorpussmall`](https://huggingface.co/uer/gpt2-chinese-cluecorpussmall)
 
 ### Blogs
-- [Fine-Tuning GPT-2 for Text Generation](https://huggingface.co/blog/fine-tune-gpt2)
+- [Fine-tuning GPT2 for movie script generation (in PyTorch)](https://discuss.huggingface.co/t/fine-tuning-gpt2-for-movie-script-generation-in-pytorch/23906)
 
 ### Datasets
 - [CLUECorpusSmall](https://github.com/CLUEbenchmark/CLUECorpus2020)
